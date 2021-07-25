@@ -1,0 +1,9 @@
+V3 4
+FL "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT 2/universal_shift_register_4bit/universal_shift_register_4bit.vhd" 2021/07/05.12:28:56 P.68d
+EN work/universal_shift_register_4bit 1627141502 \
+      FL "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT 2/universal_shift_register_4bit/universal_shift_register_4bit.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/universal_shift_register_4bit/Behavioral 1627141503 \
+      FL "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT 2/universal_shift_register_4bit/universal_shift_register_4bit.vhd" \
+      EN work/universal_shift_register_4bit 1627141502
+FL "D:/DMU/ADD/Assignment 01/Xilinx file location/universal_shift_register_4bit/universal_shift_register_4bit.vhd" 2021/07/05.12:28:54 P.68d

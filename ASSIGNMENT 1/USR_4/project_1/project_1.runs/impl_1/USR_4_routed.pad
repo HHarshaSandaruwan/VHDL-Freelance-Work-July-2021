@@ -1,0 +1,21 @@
+Release 14.6 - par P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Jul 18 23:41:18 2021
+
+
+# NOTE: This file is designed to be imported into a spreadsheet program
+# such as Microsoft Excel for viewing, printing and sorting. The |
+# character is used as the data field separator. This file is also designed
+# to support parsing.
+#
+INPUT FILE:       USR_4.ncd
+OUTPUT FILE:      USR_4_routed.pad
+PART TYPE:        xc3s100e
+SPEED GRADE:      -5
+PACKAGE:          cp132
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|Drive (mA)|Slew Rate|Termination|

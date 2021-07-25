@@ -1,0 +1,311 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: USR_4.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "USR_4.prj"
+
+---- Target Parameters
+Target Device                      : xc3s100ecp132-5
+Output File Name                   : "USR_4.ngc"
+
+---- Source Options
+Top Module Name                    : USR_4
+
+---- Target Options
+Add Generic Clock Buffer(BUFG)     : 24
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT 1/USR_4/USR_4.vhd" in Library work.
+Entity <USR_4> compiled.
+Entity <USR_4> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <USR_4> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <USR_4> in library <work> (Architecture <Behavioral>).
+Entity <USR_4> analyzed. Unit <USR_4> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <USR_4>.
+    Related source file is "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT 1/USR_4/USR_4.vhd".
+    Found 4-bit register for signal <Q>.
+    Found 4-bit 4-to-1 multiplexer for signal <Q$mux0000>.
+    Found 4-bit register for signal <TEMP>.
+    Found 1-bit 4-to-1 multiplexer for signal <TEMP_0$mux0000> created at line 37.
+    Found 1-bit 4-to-1 multiplexer for signal <TEMP_1$mux0000> created at line 37.
+    Found 1-bit 4-to-1 multiplexer for signal <TEMP_2$mux0000> created at line 37.
+    Found 1-bit 4-to-1 multiplexer for signal <TEMP_3$mux0000> created at line 37.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <USR_4> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 5
+ 1-bit register                                        : 4
+ 4-bit register                                        : 1
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <USR_4> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : USR_4.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 16
+#      LUT3                        : 8
+#      LUT4                        : 4
+#      MUXF5                       : 4
+# FlipFlops/Latches                : 8
+#      FDC                         : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 9
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                        6  out of    960     0%  
+ Number of Slice Flip Flops:              8  out of   1920     0%  
+ Number of 4 input LUTs:                 12  out of   1920     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of     83    16%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.240ns (Maximum Frequency: 446.439MHz)
+   Minimum input arrival time before clock: 3.233ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.240ns (frequency: 446.439MHz)
+  Total number of paths / destination ports: 18 / 8
+-------------------------------------------------------------------------
+Delay:               2.240ns (Levels of Logic = 2)
+  Source:            TEMP_2 (FF)
+  Destination:       TEMP_2 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: TEMP_2 to TEMP_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.514   0.568  TEMP_2 (TEMP_2)
+     LUT3:I1->O            1   0.612   0.000  Mmux_TEMP_2_mux0000_2_f5_F (N3)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_TEMP_2_mux0000_2_f5 (TEMP_2_mux0000)
+     FDC:D                     0.268          TEMP_2
+    ----------------------------------------
+    Total                      2.240ns (1.672ns logic, 0.568ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Offset:              3.233ns (Levels of Logic = 3)
+  Source:            S<0> (PAD)
+  Destination:       TEMP_3 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: S<0> to TEMP_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.106   0.969  S_0_IBUF (S_0_IBUF)
+     LUT3:I0->O            1   0.612   0.000  Mmux_TEMP_3_mux0000_3 (Mmux_TEMP_3_mux0000_3)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_TEMP_3_mux0000_2_f5 (TEMP_3_mux0000)
+     FDC:D                     0.268          TEMP_3
+    ----------------------------------------
+    Total                      3.233ns (2.264ns logic, 0.969ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            Q_3 (FF)
+  Destination:       Q<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Q_3 to Q<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.380  Q_3 (Q_3)
+     OBUF:I->O                 3.169          Q_3_OBUF (Q<3>)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.40 secs
+ 
+--> 
+
+Total memory usage is 292028 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT 2/universal_shift_register_4bit/universal_shift_register_4bit_isim_beh.exe" -prj "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT 2/universal_shift_register_4bit/universal_shift_register_4bit_beh.prj" "work.universal_shift_register_4bit" 

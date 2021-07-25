@@ -1,0 +1,39 @@
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net CLK_BUFGP
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 18 paths analyzed, 18 endpoints analyzed, 1 failing endpoint
+ 1 timing error detected. (1 setup error, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   2.210ns.
+--------------------------------------------------------------------------------
+Slack:                  -0.001 (requirement - (data path - clock path skew + uncertainty))
+  Source:               TEMP_2 (FF)
+  Destination:          TEMP_3 (FF)
+  Requirement:          2.209
+  Data Path Delay:      2.208 (Levels of Logic = 1)
+  Clock Path Skew:      -0.002ns (0.037 - 0.039)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 2.209ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: TEMP_2 to TEMP_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y19.XQ      Tcko                  0.514   TEMP[2]
+                                                       TEMP_2
+    SLICE_X30Y12.G3      net (fanout=4)        0.578   TEMP[2]
+    SLICE_X30Y12.CLK     Tgck                  1.116   TEMP[3]
+                                                       Mmux_TEMP_3_mux0000_4
+                                                       Mmux_TEMP_3_mux0000_2_f5
+                                                       TEMP_3
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+

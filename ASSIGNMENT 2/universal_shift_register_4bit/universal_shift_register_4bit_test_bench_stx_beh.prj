@@ -1,0 +1,2 @@
+vhdl isim_temp "universal_shift_register_4bit.vhd"
+vhdl isim_temp "universal_shift_register_4bit_test_bench.vhd"

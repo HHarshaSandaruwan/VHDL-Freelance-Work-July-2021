@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn USR_4.prj
+-top USR_4
+-p xc3s100ecp132-5
+-ofn USR_4.ngc
+-opt_mode speed
+-opt_level 1
+-bufg 24

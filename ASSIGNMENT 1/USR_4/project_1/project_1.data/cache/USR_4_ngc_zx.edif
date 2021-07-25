@@ -1,0 +1,690 @@
+(edif USR_4
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2021 7 18 23 41 1)
+      (program "Xilinx ngc2edif" (version "P.68d"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure USR_4.ngc USR_4.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell FDC
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port C
+              (direction INPUT)
+            )
+            (port CLR
+              (direction INPUT)
+            )
+            (port D
+              (direction INPUT)
+            )
+            (port Q
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell MUXF5
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port S
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT3
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port I2
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT4
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port I2
+              (direction INPUT)
+            )
+            (port I3
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell IBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell BUFGP
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library USR_4_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell USR_4
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port CLK
+              (direction INPUT)
+            )
+            (port SIL
+              (direction INPUT)
+            )
+            (port SIR
+              (direction INPUT)
+            )
+            (port RST
+              (direction INPUT)
+            )
+            (port (array (rename Q "Q<3:0>") 4)
+              (direction OUTPUT))
+            (port (array (rename D "D<3:0>") 4)
+              (direction INPUT))
+            (port (array (rename S "S<1:0>") 2)
+              (direction INPUT))
+            (designator "xc3s100ecp132-5")
+            (property TYPE (string "USR_4") (owner "Xilinx"))
+            (property BUS_INFO (string "4:OUTPUT:Q<3:0>") (owner "Xilinx"))
+            (property BUS_INFO (string "4:INPUT:D<3:0>") (owner "Xilinx"))
+            (property BUS_INFO (string "2:INPUT:S<1:0>") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "USR_4_USR_4") (owner "Xilinx"))
+          )
+          (contents
+            (instance TEMP_3
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance TEMP_2
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance TEMP_1
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance TEMP_0
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Q_0_renamed_0 "Q_0")
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Q_1_renamed_1 "Q_1")
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Q_2_renamed_2 "Q_2")
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Q_3_renamed_3 "Q_3")
+              (viewRef view_1 (cellRef FDC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_3_mux0000_2_f5
+              (viewRef view_1 (cellRef MUXF5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Mmux_TEMP_3_mux0000_4_renamed_4 "Mmux_TEMP_3_mux0000_4")
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "E4") (owner "Xilinx"))
+            )
+            (instance (rename Mmux_TEMP_3_mux0000_3_renamed_5 "Mmux_TEMP_3_mux0000_3")
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "E4") (owner "Xilinx"))
+            )
+            (instance Mmux_Q_mux000081
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "FE10") (owner "Xilinx"))
+            )
+            (instance Mmux_Q_mux000061
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "FE10") (owner "Xilinx"))
+            )
+            (instance Mmux_Q_mux000041
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "FE10") (owner "Xilinx"))
+            )
+            (instance Mmux_Q_mux000021
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "FE10") (owner "Xilinx"))
+            )
+            (instance (rename SIL_IBUF_renamed_6 "SIL_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename SIR_IBUF_renamed_7 "SIR_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename RST_IBUF_renamed_8 "RST_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename D_3_IBUF_renamed_9 "D_3_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename D_2_IBUF_renamed_10 "D_2_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename D_1_IBUF_renamed_11 "D_1_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename D_0_IBUF_renamed_12 "D_0_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename S_1_IBUF_renamed_13 "S_1_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename S_0_IBUF_renamed_14 "S_0_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Q_3_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Q_2_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Q_1_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Q_0_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_0_mux0000_2_f5
+              (viewRef view_1 (cellRef MUXF5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_0_mux0000_2_f5_F
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "B8") (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_0_mux0000_2_f5_G
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "B8") (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_2_mux0000_2_f5
+              (viewRef view_1 (cellRef MUXF5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_2_mux0000_2_f5_F
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "E4") (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_2_mux0000_2_f5_G
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "B8") (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_1_mux0000_2_f5
+              (viewRef view_1 (cellRef MUXF5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_1_mux0000_2_f5_F
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "D8") (owner "Xilinx"))
+            )
+            (instance Mmux_TEMP_1_mux0000_2_f5_G
+              (viewRef view_1 (cellRef LUT3 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "B8") (owner "Xilinx"))
+            )
+            (instance (rename CLK_BUFGP_renamed_15 "CLK_BUFGP")
+              (viewRef view_1 (cellRef BUFGP (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net CLK
+              (joined
+                (portRef CLK)
+                (portRef I (instanceRef CLK_BUFGP_renamed_15))
+              )
+            )
+            (net CLK_BUFGP
+              (joined
+                (portRef C (instanceRef TEMP_3))
+                (portRef C (instanceRef TEMP_2))
+                (portRef C (instanceRef TEMP_1))
+                (portRef C (instanceRef TEMP_0))
+                (portRef C (instanceRef Q_0_renamed_0))
+                (portRef C (instanceRef Q_1_renamed_1))
+                (portRef C (instanceRef Q_2_renamed_2))
+                (portRef C (instanceRef Q_3_renamed_3))
+                (portRef O (instanceRef CLK_BUFGP_renamed_15))
+              )
+            )
+            (net (rename D_0_ "D<0>")
+              (joined
+                (portRef (member D 3))
+                (portRef I (instanceRef D_0_IBUF_renamed_12))
+              )
+            )
+            (net (rename D_1_ "D<1>")
+              (joined
+                (portRef (member D 2))
+                (portRef I (instanceRef D_1_IBUF_renamed_11))
+              )
+            )
+            (net (rename D_2_ "D<2>")
+              (joined
+                (portRef (member D 1))
+                (portRef I (instanceRef D_2_IBUF_renamed_10))
+              )
+            )
+            (net (rename D_3_ "D<3>")
+              (joined
+                (portRef (member D 0))
+                (portRef I (instanceRef D_3_IBUF_renamed_9))
+              )
+            )
+            (net D_0_IBUF
+              (joined
+                (portRef O (instanceRef D_0_IBUF_renamed_12))
+                (portRef I0 (instanceRef Mmux_TEMP_0_mux0000_2_f5_G))
+              )
+            )
+            (net D_1_IBUF
+              (joined
+                (portRef O (instanceRef D_1_IBUF_renamed_11))
+                (portRef I0 (instanceRef Mmux_TEMP_1_mux0000_2_f5_G))
+              )
+            )
+            (net D_2_IBUF
+              (joined
+                (portRef O (instanceRef D_2_IBUF_renamed_10))
+                (portRef I0 (instanceRef Mmux_TEMP_2_mux0000_2_f5_G))
+              )
+            )
+            (net D_3_IBUF
+              (joined
+                (portRef I2 (instanceRef Mmux_TEMP_3_mux0000_3_renamed_5))
+                (portRef O (instanceRef D_3_IBUF_renamed_9))
+              )
+            )
+            (net Mmux_TEMP_3_mux0000_3
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_3_mux0000_3_renamed_5))
+                (portRef I1 (instanceRef Mmux_TEMP_3_mux0000_2_f5))
+              )
+            )
+            (net Mmux_TEMP_3_mux0000_4
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_3_mux0000_4_renamed_4))
+                (portRef I0 (instanceRef Mmux_TEMP_3_mux0000_2_f5))
+              )
+            )
+            (net N11
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_0_mux0000_2_f5_F))
+                (portRef I0 (instanceRef Mmux_TEMP_0_mux0000_2_f5))
+              )
+            )
+            (net N2
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_0_mux0000_2_f5_G))
+                (portRef I1 (instanceRef Mmux_TEMP_0_mux0000_2_f5))
+              )
+            )
+            (net N3
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_2_mux0000_2_f5_F))
+                (portRef I0 (instanceRef Mmux_TEMP_2_mux0000_2_f5))
+              )
+            )
+            (net N4
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_2_mux0000_2_f5_G))
+                (portRef I1 (instanceRef Mmux_TEMP_2_mux0000_2_f5))
+              )
+            )
+            (net N5
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_1_mux0000_2_f5_F))
+                (portRef I0 (instanceRef Mmux_TEMP_1_mux0000_2_f5))
+              )
+            )
+            (net N6
+              (joined
+                (portRef O (instanceRef Mmux_TEMP_1_mux0000_2_f5_G))
+                (portRef I1 (instanceRef Mmux_TEMP_1_mux0000_2_f5))
+              )
+            )
+            (net (rename Q_0_ "Q<0>")
+              (joined
+                (portRef (member Q 3))
+                (portRef O (instanceRef Q_0_OBUF))
+              )
+            )
+            (net (rename Q_1_ "Q<1>")
+              (joined
+                (portRef (member Q 2))
+                (portRef O (instanceRef Q_1_OBUF))
+              )
+            )
+            (net (rename Q_2_ "Q<2>")
+              (joined
+                (portRef (member Q 1))
+                (portRef O (instanceRef Q_2_OBUF))
+              )
+            )
+            (net (rename Q_3_ "Q<3>")
+              (joined
+                (portRef (member Q 0))
+                (portRef O (instanceRef Q_3_OBUF))
+              )
+            )
+            (net Q_0
+              (joined
+                (portRef Q (instanceRef Q_0_renamed_0))
+                (portRef I (instanceRef Q_0_OBUF))
+                (portRef I2 (instanceRef Mmux_Q_mux000021))
+              )
+            )
+            (net Q_1
+              (joined
+                (portRef Q (instanceRef Q_1_renamed_1))
+                (portRef I (instanceRef Q_1_OBUF))
+                (portRef I2 (instanceRef Mmux_Q_mux000041))
+              )
+            )
+            (net Q_2
+              (joined
+                (portRef Q (instanceRef Q_2_renamed_2))
+                (portRef I (instanceRef Q_2_OBUF))
+                (portRef I2 (instanceRef Mmux_Q_mux000061))
+              )
+            )
+            (net Q_3
+              (joined
+                (portRef Q (instanceRef Q_3_renamed_3))
+                (portRef I (instanceRef Q_3_OBUF))
+                (portRef I2 (instanceRef Mmux_Q_mux000081))
+              )
+            )
+            (net (rename Q_mux0000_0_ "Q_mux0000<0>")
+              (joined
+                (portRef D (instanceRef Q_0_renamed_0))
+                (portRef O (instanceRef Mmux_Q_mux000021))
+              )
+            )
+            (net (rename Q_mux0000_1_ "Q_mux0000<1>")
+              (joined
+                (portRef D (instanceRef Q_1_renamed_1))
+                (portRef O (instanceRef Mmux_Q_mux000041))
+              )
+            )
+            (net (rename Q_mux0000_2_ "Q_mux0000<2>")
+              (joined
+                (portRef D (instanceRef Q_2_renamed_2))
+                (portRef O (instanceRef Mmux_Q_mux000061))
+              )
+            )
+            (net (rename Q_mux0000_3_ "Q_mux0000<3>")
+              (joined
+                (portRef D (instanceRef Q_3_renamed_3))
+                (portRef O (instanceRef Mmux_Q_mux000081))
+              )
+            )
+            (net RST
+              (joined
+                (portRef RST)
+                (portRef I (instanceRef RST_IBUF_renamed_8))
+              )
+            )
+            (net RST_IBUF
+              (joined
+                (portRef CLR (instanceRef TEMP_3))
+                (portRef CLR (instanceRef TEMP_2))
+                (portRef CLR (instanceRef TEMP_1))
+                (portRef CLR (instanceRef TEMP_0))
+                (portRef CLR (instanceRef Q_0_renamed_0))
+                (portRef CLR (instanceRef Q_1_renamed_1))
+                (portRef CLR (instanceRef Q_2_renamed_2))
+                (portRef CLR (instanceRef Q_3_renamed_3))
+                (portRef O (instanceRef RST_IBUF_renamed_8))
+              )
+            )
+            (net (rename S_0_ "S<0>")
+              (joined
+                (portRef (member S 1))
+                (portRef I (instanceRef S_0_IBUF_renamed_14))
+              )
+            )
+            (net (rename S_1_ "S<1>")
+              (joined
+                (portRef (member S 0))
+                (portRef I (instanceRef S_1_IBUF_renamed_13))
+              )
+            )
+            (net SIL
+              (joined
+                (portRef SIL)
+                (portRef I (instanceRef SIL_IBUF_renamed_6))
+              )
+            )
+            (net SIL_IBUF
+              (joined
+                (portRef O (instanceRef SIL_IBUF_renamed_6))
+                (portRef I0 (instanceRef Mmux_TEMP_0_mux0000_2_f5_F))
+              )
+            )
+            (net SIR
+              (joined
+                (portRef SIR)
+                (portRef I (instanceRef SIR_IBUF_renamed_7))
+              )
+            )
+            (net SIR_IBUF
+              (joined
+                (portRef I1 (instanceRef Mmux_TEMP_3_mux0000_3_renamed_5))
+                (portRef O (instanceRef SIR_IBUF_renamed_7))
+              )
+            )
+            (net S_0_IBUF
+              (joined
+                (portRef I0 (instanceRef Mmux_TEMP_3_mux0000_3_renamed_5))
+                (portRef I0 (instanceRef Mmux_TEMP_3_mux0000_4_renamed_4))
+                (portRef O (instanceRef S_0_IBUF_renamed_14))
+                (portRef I0 (instanceRef Mmux_TEMP_2_mux0000_2_f5_F))
+                (portRef I0 (instanceRef Mmux_TEMP_1_mux0000_2_f5_F))
+                (portRef I0 (instanceRef Mmux_Q_mux000081))
+                (portRef I0 (instanceRef Mmux_Q_mux000061))
+                (portRef I1 (instanceRef Mmux_Q_mux000041))
+                (portRef I1 (instanceRef Mmux_Q_mux000021))
+                (portRef I1 (instanceRef Mmux_TEMP_0_mux0000_2_f5_F))
+                (portRef I1 (instanceRef Mmux_TEMP_0_mux0000_2_f5_G))
+                (portRef I1 (instanceRef Mmux_TEMP_2_mux0000_2_f5_G))
+                (portRef I1 (instanceRef Mmux_TEMP_1_mux0000_2_f5_G))
+              )
+            )
+            (net S_1_IBUF
+              (joined
+                (portRef S (instanceRef Mmux_TEMP_3_mux0000_2_f5))
+                (portRef O (instanceRef S_1_IBUF_renamed_13))
+                (portRef S (instanceRef Mmux_TEMP_0_mux0000_2_f5))
+                (portRef S (instanceRef Mmux_TEMP_2_mux0000_2_f5))
+                (portRef S (instanceRef Mmux_TEMP_1_mux0000_2_f5))
+                (portRef I1 (instanceRef Mmux_Q_mux000081))
+                (portRef I1 (instanceRef Mmux_Q_mux000061))
+                (portRef I0 (instanceRef Mmux_Q_mux000041))
+                (portRef I0 (instanceRef Mmux_Q_mux000021))
+              )
+            )
+            (net (rename TEMP_0_ "TEMP<0>")
+              (joined
+                (portRef Q (instanceRef TEMP_0))
+                (portRef I3 (instanceRef Mmux_Q_mux000021))
+                (portRef I2 (instanceRef Mmux_TEMP_0_mux0000_2_f5_F))
+                (portRef I1 (instanceRef Mmux_TEMP_1_mux0000_2_f5_F))
+              )
+            )
+            (net TEMP_0_mux0000
+              (joined
+                (portRef D (instanceRef TEMP_0))
+                (portRef O (instanceRef Mmux_TEMP_0_mux0000_2_f5))
+              )
+            )
+            (net (rename TEMP_1_ "TEMP<1>")
+              (joined
+                (portRef Q (instanceRef TEMP_1))
+                (portRef I2 (instanceRef Mmux_TEMP_2_mux0000_2_f5_F))
+                (portRef I3 (instanceRef Mmux_Q_mux000041))
+                (portRef I2 (instanceRef Mmux_TEMP_0_mux0000_2_f5_G))
+                (portRef I2 (instanceRef Mmux_TEMP_1_mux0000_2_f5_F))
+              )
+            )
+            (net TEMP_1_mux0000
+              (joined
+                (portRef D (instanceRef TEMP_1))
+                (portRef O (instanceRef Mmux_TEMP_1_mux0000_2_f5))
+              )
+            )
+            (net (rename TEMP_2_ "TEMP<2>")
+              (joined
+                (portRef Q (instanceRef TEMP_2))
+                (portRef I2 (instanceRef Mmux_TEMP_3_mux0000_4_renamed_4))
+                (portRef I1 (instanceRef Mmux_TEMP_2_mux0000_2_f5_F))
+                (portRef I3 (instanceRef Mmux_Q_mux000061))
+                (portRef I2 (instanceRef Mmux_TEMP_1_mux0000_2_f5_G))
+              )
+            )
+            (net TEMP_2_mux0000
+              (joined
+                (portRef D (instanceRef TEMP_2))
+                (portRef O (instanceRef Mmux_TEMP_2_mux0000_2_f5))
+              )
+            )
+            (net (rename TEMP_3_ "TEMP<3>")
+              (joined
+                (portRef Q (instanceRef TEMP_3))
+                (portRef I1 (instanceRef Mmux_TEMP_3_mux0000_4_renamed_4))
+                (portRef I3 (instanceRef Mmux_Q_mux000081))
+                (portRef I2 (instanceRef Mmux_TEMP_2_mux0000_2_f5_G))
+              )
+            )
+            (net TEMP_3_mux0000
+              (joined
+                (portRef D (instanceRef TEMP_3))
+                (portRef O (instanceRef Mmux_TEMP_3_mux0000_2_f5))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design USR_4
+    (cellRef USR_4
+      (libraryRef USR_4_lib)
+    )
+    (property PART (string "xc3s100ecp132-5") (owner "Xilinx"))
+  )
+)
+

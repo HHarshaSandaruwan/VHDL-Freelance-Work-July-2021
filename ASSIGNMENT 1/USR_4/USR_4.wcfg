@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="usr_4_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/usr_4_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/usr_4_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/usr_4_tb/sir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sir</obj_property>
+      <obj_property name="ObjectShortName">sir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/usr_4_tb/sil" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sil</obj_property>
+      <obj_property name="ObjectShortName">sil</obj_property>
+   </wvobject>
+   <wvobject fp_name="/usr_4_tb/d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/usr_4_tb/s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/usr_4_tb/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/usr_4_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

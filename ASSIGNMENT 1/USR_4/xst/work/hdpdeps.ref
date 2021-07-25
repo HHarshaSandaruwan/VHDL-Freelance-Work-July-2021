@@ -1,0 +1,7 @@
+V3 3
+FL "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4.vhd" 2021/07/05.14:35:39 P.68d
+EN work/USR_4 1625563086 \
+      FL "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/USR_4/Behavioral 1625563087 \
+      FL "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4.vhd" EN work/USR_4 1625563086

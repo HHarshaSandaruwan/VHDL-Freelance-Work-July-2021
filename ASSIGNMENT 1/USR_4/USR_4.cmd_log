@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4.xst" -ofn "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "USR_4.ngc" USR_4.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o USR_4_map.ncd USR_4.ngd USR_4.pcf 
+par -w -intstyle ise -ol high -t 1 USR_4_map.ncd USR_4.ncd USR_4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml USR_4.twx USR_4.ncd -o USR_4.twr USR_4.pcf 
+xst -intstyle ise -ifn "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4.xst" -ofn "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "USR_4.ngc" USR_4.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o USR_4_map.ncd USR_4.ngd USR_4.pcf 
+par -w -intstyle ise -ol high -t 1 USR_4_map.ncd USR_4.ncd USR_4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml USR_4.twx USR_4.ncd -o USR_4.twr USR_4.pcf 

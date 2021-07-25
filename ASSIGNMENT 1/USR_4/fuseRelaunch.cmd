@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4_TB_isim_beh.exe" -prj "D:/DMU/ADD/Assignment 01/Xilinx_Location/USR_4/USR_4_TB_beh.prj" "work.USR_4_TB" 

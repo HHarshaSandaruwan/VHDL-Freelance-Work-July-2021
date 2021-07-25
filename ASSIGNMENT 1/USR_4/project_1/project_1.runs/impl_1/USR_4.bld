@@ -1,0 +1,39 @@
+Release 14.6 ngdbuild P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: E:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -p xc3s100ecp132-5 -dd _ngo -uc USR_4.ucf USR_4.edf
+
+Executing edif2ngd -quiet "USR_4.edf" "_ngo\USR_4.ngo"
+Release 14.6 - edif2ngd P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file "D:/DMU/ADD/Assignment 01/3 Assignment Jute friends/ASSIGNMENT
+1/USR_4/project_1/project_1.runs/impl_1/_ngo/USR_4.ngo" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "USR_4.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 177888 kilobytes
+
+Writing NGD file "USR_4.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "USR_4.bld"...
